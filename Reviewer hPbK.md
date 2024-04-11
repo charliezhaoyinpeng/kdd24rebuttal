@@ -1,7 +1,7 @@
 
 
 **[Q1]** We need to clarify that our technical contributions extend beyond merely adding fair constraints. To learn a fair classifier under covariate and dependence shifts, **our technical contributions are threefold**:
-- [sec. 4.1] A transformation model is proposed to disentangle inputs into semantic $c$, sensitive $a$, and style $s$ factors.
+- [sec. 4.1] A transformation model is proposed to disentangle inputs into semantic $\bf c$, sensitive $\bf a$, and style $\bf s$ factors.
 - [sec. 4.2] To enhance the diversity of source domains while ensuring fairness, we augment data by preserving $c$ unchanged and randomly sampling $\bf a$ and $\bf c$ through the transformation model $T$. Therefore, the generated data in each synthetic domain exhibit various styles (covariate shift) and dependence scores (dependence shift). 
 - [sec. 4.2] A fairness-aware invariant classifier $f$ is learned based on the original source and augmented data. The objective function is regularized with $L_{inv}$ and $L_{fair}$, as stated in steps 7 and 9 in Algorithm 1. 
 
