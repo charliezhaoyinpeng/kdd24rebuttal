@@ -4,3 +4,10 @@
 **[W2, Q2]** To analyze the complexity of Algorithm 1, we initially address the complexity of learning the transformation model $T$. According to Algorithm 2 in the appendix, the complexity of learning $T$ is expressed as $O(n \cdot q \cdot p)$, where $n$ stands for the number of epochs, $q$ represents the number of batches, and $p$ signifies the number of iterations of the optimizer Adam. In Algorithm 1, the transformation model is employed to produce samples in synthetic domains. The complexity of Algorithm 1 can be defined as $O(t \cdot m \cdot (h + p))$, where $t$ denotes the number of epochs, $m$ indicates the number of batches, $h$ signifies the number of samples generated through $T$, and $p$ represents the number of iterations of Adam.
 
 **[Q1]** Thanks for your suggestions! We read through the recommended paper and considered the following methods (AFN, RSC, FSCL) mentioned in the paper as baselines. We will add the following results to the accepted version.
+
+|    Methods    |     (B,0.91)    | (E,0.87) | (I,0.58) | (W,0.49) | (L,0.48) | (M,0.87) | (S,0.39) | Avg |
+|:-------------:|:---------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:---:|
+|      AFN      |                 |          |          |          |          |          |          |     |
+|      RSC      |                 |          |          |          |          |          |          |     |
+|      FSCL     |                 |          |          |          |          |          |          |     |
+| FEDORA (Ours) | 0.94$\pm$0.05） |          |          |          |          |          |          |     |
