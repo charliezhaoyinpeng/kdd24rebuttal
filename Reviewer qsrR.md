@@ -14,7 +14,7 @@
 
 **[Q3]** In Eq.(1), we provide a general form of group fairness. As indicated in lines 300-302, when $p_1$ is set to $\mathbb{P}(Z=1,Y=1)$, Eq.(1) becomes a relaxed form of difference of equalized opportunity (DEO), where DEO is defined as  $|\mathbb{P}(\hat{Y}=1|Z=1,Y=1) - \mathbb{P}(\hat{Y}=1|Z=-1,Y=1)|$ in [35].  We agree with your statement that DEO can be $0$ with all predictions being $0$ class, indicating perfect fairness but poor accuracy. Due to the tradeoff between fairness and accuracy in group fairness, one needs to improve predicted model fairness and ensure comparable accuracy performance, as our results are shown in Tables 4 and 5.
 
-Besides, $Z$ in Eq.(1) requires to be {$-1,1$}. This is because $(\frac{Z+1}{2}-p_1)$ needs to be offset with the denominator in $\frac{1}{p_1(1-p_1)}$. However, it is OK for class labels lying in {$0,1$}.
+Besides, $Z$ in Eq.(1) requires to be {-1,1}. This is because $(\frac{Z+1}{2}-p_1)$ needs to be offset with the denominator in $\frac{1}{p_1(1-p_1)}$. However, it is OK for class labels lying in {0,1}.
 
 **[Q4]** Due to the inaccessibility of target domains during training, Problem 1 aims to learn a fair classifier that can be generalized well on all domains (source and target domains) with given source domains only. The problem in practice is challenging because we need to find a $f$ based on source data and also make it reach a minimum risk onto unknown target data (lines 517-519, 561-564, 575-576).
 
