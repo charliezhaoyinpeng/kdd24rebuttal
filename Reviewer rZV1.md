@@ -26,4 +26,4 @@ Due to space limits, we defer the details of the disentanglement approach in App
 
 Moreover, DP as a fair metric requires an equal proportion (ratio) of positive predictions in each sensitive group. Therefore, the higher ratio represents better fair performance. However, some papers define DP as $\delta$DP, where $\delta$DP indicates the difference in positive predictions between sensitive groups. In this case, the smaller the difference, the better. 
 
-**[Q6]** In Table 2, $S=|E^s|$ indicates the number of source domains, and $M$ signifies multiple domains. $D_{tgt}$ denotes target datasets. In order to highlight the novelty of this paper, Table 2 provides an overview of different settings of existing related approaches.
+**[Q6]** In Table 2, $S=|\mathcal{E}^s|$ indicates the number of source domains, and $M$ signifies multiple domains. $D_{tgt}$ denotes target datasets. In order to highlight the novelty of this paper, Table 2 provides an overview of different settings of existing related approaches.
