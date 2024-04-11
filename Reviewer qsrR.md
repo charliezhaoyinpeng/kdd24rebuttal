@@ -5,9 +5,9 @@
 **[W3]** The goal of Fig. 2 is to illustrate the learning of the transformation model (left) and the use of it for augmentation (right). Keyword summaries refer to the grey boxes at the bottom of Fig. 2 (above the caption). Since the generated samples in synthetic domains are further used to learn the classifier $f$, $f$ is not included in this figure.
 
 **[W4]** We claim that the data augmentation strategy is part of the technical contribution of the proposed method, FEDORA. It serves as a key to learning the fair classifier $f$ in section 4.2. Technically, the main contributions of the proposed method are three folds: 
-- (1) We learn the transformation model and use it to enhance the diversity of source data (section 4.1); 
-- (2) More importantly, we learn a classifier $f$ satisfying domain-invariance with respect to model fairness (section 4.2, 4.3); 
-- (3) The fair classifier $f$ is approximated (due to challenges stated in lines 512-519) to an empirical solution with theoretic guarantees (section 4.2, 5).
+- (1) We learn the transformation model and use it to enhance the diversity of source data (**section 4.1**); 
+- (2) More importantly, we learn a classifier $f$ satisfying domain-invariance with respect to model fairness (**section 4.2, 4.3**); 
+- (3) The fair classifier $f$ is approximated (due to challenges stated in lines 512-519) to an empirical solution with theoretic guarantees (**section 4.2, 5**).
 
 **[W5]** In this work, we address the fairness-aware domain generalization problem, specifically attributed to the distribution shifts due to covariate and dependence shifts simultaneously. To our knowledge, this problem is novel, as we show existing related works in Table 2. The main idea of the proposed method is to learn a fairness-aware invariant classifier by enhancing the diversity of data in source domains with respect to data styles and dependence scores between sensitive attributes and labels.
 
