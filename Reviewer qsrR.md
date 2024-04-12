@@ -19,7 +19,7 @@
 
 Besides, $Z$ in Eq.(1) requires to be {-1,1}. This is because $(\frac{Z+1}{2}-p_1)$ needs to be offset with the denominator in $\frac{1}{p_1(1-p_1)}$. However, it is OK for class labels lying in {0,1}.
 
-**[Q4]** Due to the inaccessibility of target domains during training, Problem 1 aims to learn a fair classifier that can be generalized well on all domains (source and target domains) with given source domains only. The problem in practice is challenging because we need to find a $f$ based on source data and also make it reach a minimum risk onto unknown target data (lines 517-519, 561-564, 575-576).
+**[Q4]** Due to the inaccessibility of target domains during training, Problem 1 aims to learn a fair classifier that can be generalized well on all domains (source and target domains) with given source domains only. Since the variation (style and dependence score) of a target domain is different and unknown, Prob 1 is challenging in learning $f$ based on source data that can be generalized well to all domains (source and target domains).
 
 **[Q5]** The similarity metrics could be different. By following [20] and [57], we choose l1-norm loss in the reconstruction loss. Following [40], we use KL-divergence in Eq.(7). 
 
